@@ -123,7 +123,7 @@ print(df.groupby('categoria')['quantidade'].agg(['mean', 'sum', 'count', 'max', 
 
 ## gráficos
 
-### - # grafico simpes de barras
+### - grafico simpes de barras
 ```
 df['categoria'].value_counts().plot(kind= 'bar')
 plt.show()
