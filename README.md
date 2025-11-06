@@ -8,7 +8,7 @@ Repositório criado para armazenar materiais e projetos desenvolvidos durante o 
 
 ## 3. Python
 
-Plataforma utilizada: Google Colab | **[Veja o script completo aqui](./firstanalysis_py.ipynb)**
+Plataforma utilizada: Google Colab | 
 
 ## importar bibliotecas
 
@@ -185,3 +185,4 @@ df['dia_da_semana'] = df['data_venda'].dt.dayofweek
 
 ---
 
+**[Veja o script completo aqui, contendo análise de oportunidades e análise final](./firstanalysis_py.ipynb)**
