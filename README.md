@@ -7,10 +7,13 @@ Repositório criado para armazenar materiais e projetos desenvolvidos durante o 
 ## 2. SQL
 
 - Plataforma utilizada: SQLite
-- **Filtros** e **Querys** utilizados na análise inicial dos dados:
+- **Filtros** e **Querys** utilizados na análise inicial dos dados
 
-### - Funções de agregação: resumiem informações da tabela, como contar categorias distintas e identificar o maior valor de estoque.
+---
 
+### Funções de agregação:
+
+Resumem informações da tabela, como contar categorias distintas e identificar o maior valor de estoque
 ```
 SELECT count(DISTINCT categoria) as total_categorias from produtos;
 ```
@@ -19,8 +22,9 @@ SELECT count(DISTINCT categoria) as total_categorias from produtos;
 SELECT nome_produto, MAX(quantidade_estoque) AS estoque_total from produtos;
 ```
 
-### - Join entre tabelas: Consulta que realiza junção entre as tabelas vendas, produtos e clientes para combinar informações completas sobre as vendas, produtos e perfis de clientes.
+### Join entre tabelas:
 
+Consulta que realiza junção entre as tabelas vendas, produtos e clientes para combinar informações completas sobre as vendas, produtos e perfis de clientes.
 ```
 SELECT v.data_venda, v.nome_cliente, v.estado,
 p.nome_produto, p.categoria, v.quantidade, 
@@ -33,8 +37,9 @@ WHERE C.idade > 40
 order by v.data_venda desc;
 ```
 
-### - Left join: Consulta que retorna todos os clientes, incluindo aqueles que ainda não realizaram vendas, preservando os registros da tabela principal (clientes).
+### Left join:
 
+Consulta que retorna todos os clientes, incluindo aqueles que ainda não realizaram vendas, preservando os registros da tabela principal (clientes).
 ````
 SELECT c.nome_cliente, v.data_venda, v.produto, v.total_venda
 From clientes c
@@ -43,8 +48,9 @@ ON c.nome_cliente = v.nome_cliente
 ORDER by c.nome_cliente;
 ````
 
-### - Case when: Consulta que utiliza a estrutura condicional `CASE WHEN` para classificar clientes conforme o valor total da venda, definindo-os como “VIP” ou “COMUM”.
+### Case when:
 
+Consulta que utiliza a estrutura condicional `CASE WHEN` para classificar clientes conforme o valor total da venda, definindo-os como “VIP” ou “COMUM”.
 ```
 SELECT * , 
   CASE 
