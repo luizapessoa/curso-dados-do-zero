@@ -8,7 +8,7 @@ Repositório criado para armazenar materiais e projetos desenvolvidos durante o 
 
 ## 3. Python
 
-Plataforma utilizada: Google Colab | 
+Plataforma utilizada: Google Colab 
 
 ## importar bibliotecas
 
