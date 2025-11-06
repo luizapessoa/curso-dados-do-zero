@@ -1,13 +1,43 @@
-# curso-dados-do-zero
-Repositório criado para armazenar materiais e projetos desenvolvidos durante o curso "Dados do Zero: Excel, SQL, Python e AWS com Projetos Reais", com foco no aprendizado prático em análise e engenharia de dados.
+# curso-dados-do-zero  
+Repositório criado para armazenar materiais e projetos desenvolvidos durante o curso **"Dados do Zero: Excel, SQL, Python e AWS com Projetos Reais"**, com foco no aprendizado prático em **análise e engenharia de dados**.
 
+---
 
-## 1. Excel
+## 1. Excel  
 
-## 2. SQL
+Plataforma utilizada: **Google Sheets**  
 
-- Plataforma utilizada: SQLite
-- **Filtros** e **Querys** utilizados na análise inicial dos dados
+Nesta etapa do curso, foi realizada a **análise inicial dos dados** utilizando planilhas, fórmulas e dashboards para explorar e visualizar as informações de forma prática.  
+
+### Análise inicial dos dados  
+
+- Importação da base de dados em formato `.csv`.  
+- Utilização de **tabelas dinâmicas** para resumo das informações por categoria e produto.  
+- Aplicação de **filtros automáticos** para segmentar dados de vendas e regiões.  
+
+### Fórmulas e funções aplicadas  
+- **SOMA** e **MÉDIA** para cálculos básicos de total de vendas e médias por categoria.  
+- **PROCV / XLOOKUP** para cruzar informações entre planilhas (ex.: cliente e produto).  
+- **SE** e **SEERRO** para classificações condicionais e tratamento de dados ausentes.  
+- **CONT.SE / CONT.SES** para contagem filtrada de produtos e clientes.  
+
+### Visualização de dados  
+- Criação de **gráficos de colunas, pizza e linha** para análise visual do desempenho de vendas.  
+- Formatação condicional para destacar valores acima ou abaixo da média.  
+- Dashboard simples com indicadores de total de vendas, ticket médio e produtos mais vendidos.  
+
+---
+
+**[Veja a planilha utilizada aqui](https://docs.google.com/spreadsheets/d/1E9BhtDrq6_1V_sOv8IzcLy2itej7sawzNNuxwpZw9Vg/edit?usp=sharing)**  
+
+---
+## SQL
+
+Plataforma utilizada: **SQLite**  
+
+Nesta etapa, foram aplicados **conceitos de banco de dados e linguagem SQL** para manipulação e análise de dados, utilizando consultas com filtros, junções e agregações.  
+
+- **Filtros** e **queries** utilizados na análise inicial dos dados.
 
 ---
 
@@ -67,7 +97,9 @@ FROM vendas;
 
 ## 3. Python
 
-Plataforma utilizada: Google Colab 
+Plataforma utilizada: Google Colab
+
+Nesta etapa foram aplicadas **bibliotecas de análise de dados** como **Pandas, NumPy, Matplotlib e Seaborn** para manipulação, visualização e extração de insights.
 
 ## importar bibliotecas
 
