@@ -8,7 +8,7 @@ Repositório criado para armazenar materiais e projetos desenvolvidos durante o 
 
 ## 3. Python
 
-Plataforma utilizada: Google Colab | **[Veja o script completo aqui](./firstanalysis.py)**
+Plataforma utilizada: Google Colab | **[Veja o script completo aqui](./firstanalysis_py.ipynb)**
 
 ## importar bibliotecas
 
