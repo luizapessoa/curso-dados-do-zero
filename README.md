@@ -28,7 +28,8 @@ Nesta etapa do curso, foi realizada a **análise inicial dos dados** utilizando 
 
 ---
 
-**[Veja a planilha utilizada aqui](./dados-venda-empresav2 (1).xlsx)**  
+**[Veja a planilha utilizada aqui](./dados-venda-empresav2%20(1).xlsx)**  
+ 
 
 ---
 ## SQL
