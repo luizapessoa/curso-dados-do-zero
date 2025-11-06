@@ -100,7 +100,7 @@ print(df['quantidade'].mean())
 print(df[df['categoria'] == 'Eletrônicos'])
 ```
 
-### - # filtro composto ou combinado
+### - filtro composto ou combinado
 ```
 print(df[(df['categoria'] == 'Eletrônicos') & (df['quantidade'] > 3)])
 ```
@@ -119,4 +119,69 @@ print(df.groupby('categoria')['quantidade'].mean())
 print(df.groupby('categoria')['quantidade'].agg(['mean', 'sum', 'count', 'max', 'min']))
 ```
 
+---
+
+## gráficos
+
+### - # grafico simpes de barras
+```
+df['categoria'].value_counts().plot(kind= 'bar')
+plt.show()
+```
+
+### - histograma de distribuição dos valores de venda 'total_venda'
+```
+df['total_venda'].plot(kind= 'hist', bins = 20)
+plt.show()
+```
+
+### - versao 2 do histograma
+```
+plt.figure(figsize =(8,6))
+df['total_venda'].hist(bins=20)
+plt.title('Distribuição das vendas')
+plt.xlabel('Valor das vendass')
+plt.ylabel('Frequência')
+plt.show()
+```
+
+### - gráfico de barras horizontais com o 'total_venda'
+```
+df['categoria'].value_counts().plot(kind= 'barh')
+plt.show()
+```
+
+### - gráfico de pizza com o 'total_venda'
+```
+df['categoria'].value_counts().plot(kind= 'pie')
+plt.show()
+```
+
+---
+
+## criando nova coluna: cliente vip ou comum
+
+### - criar uma nova coluna status do cliente
+```
+df['status_cliente'] = np.where(df['total_venda'] > 10000, 'cliente vip', 'cliente comum')
+```
+
+---
+
+## trabalhando com datas
+
+### - garantir que as informações de data estão em formato datetime
+```
+df['data_venda'] = pd.to_datetime(df['data_venda'])
+```
+
+### - extraindo informações de datatime
+```
+df['ano_venda'] = df['data_venda'].dt.year
+df['mes_venda'] = df['data_venda'].dt.month
+df['dia_venda'] = df['data_venda'].dt.day
+df['dia_da_semana'] = df['data_venda'].dt.dayofweek
+```
+
+---
 
