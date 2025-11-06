@@ -60,6 +60,10 @@ SELECT * ,
 FROM vendas;
 ```
 
+---
+
+**[Veja o script completo aqui](./analise.sql)**
+
 
 ## 3. Python
 
