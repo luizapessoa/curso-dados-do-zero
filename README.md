@@ -9,7 +9,6 @@ Repositório criado para armazenar materiais e projetos desenvolvidos durante o 
 ## 3. Python
 
 ``` firstanalysis.py
-**importando bibliotecas**
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
