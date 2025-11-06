@@ -277,3 +277,23 @@ df['dia_da_semana'] = df['data_venda'].dt.dayofweek
 ---
 
 **[Veja o script completo aqui, contendo análise de oportunidades e análise final](./firstanalysis_py.ipynb)**
+
+---
+
+## Roadmap de Aprendizado — Próximos Módulos  
+
+A seguir estão os módulos que ainda serão estudados no curso **Dados do Zero**, além das próximas etapas do meu desenvolvimento como analista de dados:
+
+
+### 🔄 Próximos passos:
+
+- Visualização de Dados no **Looker Studio**
+- Computação em Nuvem com **AWS**
+- Controle de versão com **Git e GitHub**
+- Criação do meu primeiro **Portfólio de Projetos em Dados**
+- Desenvolvimento do **Plano de Ação para conquistar a primeira vaga** na área de dados  
+  (LinkedIn, currículo, posicionamento, networking)
+
+---
+
+🔎 *O repositório será atualizado conforme cada módulo for concluído.*
